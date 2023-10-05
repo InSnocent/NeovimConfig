@@ -9,3 +9,5 @@ require('keybindings')
 --插件配置
 require('plugin-config.nvim-tree')
 require('plugin-config.Coc')
+require('plugin-config.lualine')
+require('plugin-config.bufferline')
