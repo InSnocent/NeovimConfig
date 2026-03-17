@@ -1,0 +1,8 @@
+# Packer 自动生成的文件
+plugin/packer_compiled.lua
+
+# Neovim 数据目录
+*.swp
+*.swo
+*~
+.DS_Store

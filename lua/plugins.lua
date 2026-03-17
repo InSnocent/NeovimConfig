@@ -10,28 +10,27 @@ packer.startup({
     use 'plasticboy/vim-markdown'
     use 'yuttie/inkstained-vim'
     use 'ferrine/md-img-paste.vim'
-    use 'neoclide/coc.nvim'
+    use {'neoclide/coc.nvim', branch = 'release'}
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
-    use 'kyazdani42/nvim-web-devicons'
+    use 'nvim-tree/nvim-web-devicons'
     use 'nvim-treesitter/nvim-treesitter'
       -- nvim-tree
-    use({'kyazdani42/nvim-tree.lua',
-      requires = "kyazdani42/nvim-web-devicons"
+    use({'nvim-tree/nvim-tree.lua',
+      requires = "nvim-tree/nvim-web-devicons"
     })
-    -- use 'nvim-tree/nvim-web-devicons'
     use 'echasnovski/mini.base16'
     -- bufferline
-    use({ 
+    use({
       "akinsho/bufferline.nvim",
       requires = {
-        "kyazdani42/nvim-web-devicons",
+        "nvim-tree/nvim-web-devicons",
         "moll/vim-bbye"
       }})
     -- lualine
-    use({ 
+    use({
       "nvim-lualine/lualine.nvim",
-      requires = "kyazdani42/nvim-web-devicons" 
+      requires = "nvim-tree/nvim-web-devicons" 
       })
     use 'arkav/lualine-lsp-progress'
 
