@@ -9,15 +9,29 @@
 4. 一个 Nerd Font 字体（用于图标显示）
 
 ## 安装步骤
-
-### 1. 安装 Packer（插件管理器）
+### 1. 拉取项目
+Linux
+```Bash
+git clone https://github.com/InSnocent/NeovimConfig.git ~/.config/nvim
+```
+Windows
+```Powershell
+Remove-Item -Recurse -Force $env:LOCALAPPDATA\nvim -ErrorAction SilentlyContinue
+git clone https://github.com/InSnocent/NeovimConfig.git $env:LOCALAPPDATA\nvim
+```
+### 2. 安装 Packer（插件管理器）
 
 Windows PowerShell:
 ```powershell
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
 ```
+Unix, Linux Installation:
+```Bash
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
 
-### 2. 安装插件
+### 3. 安装插件
 
 打开 Neovim:
 ```bash
@@ -31,11 +45,11 @@ nvim
 
 等待所有插件安装完成。
 
-### 3. 安装 coc.nvim 扩展（可选）
+### 4. 安装 coc.nvim 扩展（可选）
 
-在 Neovim 中运行：
+在 Neovim 中演示安装Coc Python支持：
 ```vim
-:CocInstall coc-json coc-tsserver coc-html coc-css coc-python
+:CocInstall coc-python
 ```
 
 根据你的开发需求安装其他语言服务器。
